@@ -4,10 +4,26 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./index.css">
     <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
-    
+<body class="w-screen h-screen bg-slate-800 text-white">
+    <header class="flex w-full p-[1rem] justify-between sm:w-full sm:p-[2rem] sm:flex sm:justify-between sm:items-center " >
+        <div class="font-bold sm:text-xl sm:px-[2.5rem]">
+            <h1>Singular</h1>
+        </div>
+        <div >
+            <ul class="hidden sm:flex sm:block sm:gap-[4rem]">
+                <li class="hover:brightness-50 cursor-pointer">Learn</li>
+                <li class="hover:brightness-50 cursor-pointer">About</li>
+                <li class="hover:brightness-50 cursor-pointer">Integrations</li>
+            </ul>
+            <div  class="space-y-2 sm:hidden  sm:space-y-2">
+                <div class="w-8 h-0.5 bg-white"></div>
+                <div class="w-8 h-0.5 bg-white"></div>
+                <div class="w-8 h-0.5 bg-white"></div>
+            </div>
+        </div>
+    </header>
 </body>
 </html>
