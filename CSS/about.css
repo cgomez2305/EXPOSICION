@@ -3,3 +3,157 @@
     padding: 0;
     box-sizing: border-box;
 }
+.container-inicio{
+    width: 100%;
+    height: 100vh;
+}
+.container-inicio-menu{
+    width: 100%;
+    height: 10%;
+    background-color: black;
+}
+
+.container-inicio-content{
+    padding-inline: 200px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    width: 100%;
+    height: 90%;
+}
+
+.container-inicio-content-1{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.container-inicio-content-1 h1{
+    font-size:  5em;
+    color: #ff5a5a;
+}
+
+.container-colabs{
+    width: 100%;
+    height: 10%;
+    text-align: center;
+    padding-block: 20px;
+    background-color: rgb(228, 228, 228);
+}
+.container-colabs-icons{
+    display: flex;
+    justify-content: center;
+    gap: 10%;
+    background-color: rgb(228, 228, 228);
+}
+.container-colabs-icons img{
+    width: 10%;
+}
+
+.container-content-mid{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-inline: 200px;
+}
+.container-content-mid1{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.container-team{
+    width: 100%;
+    padding-inline: 200px;
+}
+
+.container-team h2{
+    font-size: 40px;
+    text-align: center;
+    padding-bottom: 20px;
+}
+.container-team-person{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+
+.container-team-person-one img{
+    width:300px;
+    border-radius: 10px;
+}
+
+
+
+@media (max-width: 992px){
+    .container-inicio-content{
+        padding-inline: 50px;
+    }
+    .container-inicio-content-1 h1{
+        font-size:  25px;
+        color: #ff5a5a;
+    }
+}
+@media (max-width: 768px){
+    .container-inicio-content{
+        display: grid;
+        padding-inline: 50px;
+    }
+    .container-inicio-content-1 h1{
+        font-size:  25px;
+        color: #ff5a5a;
+    }
+    .container-content-mid{
+        display: grid;
+        padding-inline: 50px;
+    }
+    .container-team{
+        width: 100%;
+        padding-inline: 20px;
+    }
+}
+@media (max-width: 375px) {
+    .container-inicio-content{
+        display: grid;
+        padding-inline: 10px;
+    }
+    .container-inicio-content-1 h1{
+        font-size:  20px;
+        color: #ff5a5a;
+    }
+    .container-colabs-icons{
+        display: flex;
+        justify-content: center;
+        gap: 10%;
+        background-color: rgb(228, 228, 228);
+    }
+    .container-content-mid{
+        display: grid;
+        padding-inline: 10px;
+    }
+    .container-team{
+        width: 100%;
+        padding-inline: 20px;
+    }
+    
+    .container-team h2{
+        font-size: 20px;
+        text-align: center;
+        padding-bottom: 20px;
+    }
+    .container-team-person{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+    }
+    
+    .container-team-person-one img{
+        width:100%;
+        border-radius: 10px;
+    }
+    
+}
