@@ -1,29 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        main {
+            height: calc(100vh - 5rem);
+            /* Ajusta esta altura según el tamaño de tu header */
+        }
+    </style>
 </head>
-<body class="w-screen h-screen bg-slate-800 text-white">
-    <header class="flex w-full p-[1rem] justify-between sm:w-full sm:p-[2rem] sm:flex sm:justify-between sm:items-center " >
+
+<body class=" bg-slate-800 text-white">
+    <header
+        class="flex w-full p-[1rem] bg-slate-900 sm:h-[5rem] justify-between sm:w-full sm:p-[2rem] sm:flex sm:justify-between sm:items-center ">
         <div class="font-bold sm:text-xl sm:px-[2.5rem]">
             <h1>Singular</h1>
         </div>
-        <div >
+        <div>
             <ul class="hidden sm:flex sm:block sm:gap-[4rem]">
                 <li class="hover:brightness-50 cursor-pointer">Learn</li>
                 <li class="hover:brightness-50 cursor-pointer">About</li>
                 <li class="hover:brightness-50 cursor-pointer">Integrations</li>
             </ul>
-            <div  class="space-y-2 sm:hidden  sm:space-y-2">
+            <div class="space-y-2 sm:hidden  sm:space-y-2">
                 <div class="w-8 h-0.5 bg-white"></div>
                 <div class="w-8 h-0.5 bg-white"></div>
                 <div class="w-8 h-0.5 bg-white"></div>
             </div>
         </div>
     </header>
+
+    <main class="sm:w-full  sm:flex sm:justify-center sm:items-center sm:text-center ">
+        <div class="sm:flex sm:flex-col sm:gap-[2rem]">
+            <div>
+                <h1 class="font-extrabold sm:text-5xl">Supercharge your design talks</h1>
+            </div>
+            <div class="sm:w-full sm:flex sm:justify-center"><p class="sm:w-[28rem] sm:text-xl">On the other hand, we denounce with righteous indignation and dislike men who are</p></div>
+            <div class="w-full flex gap-[2rem] justify-center">
+                <button class="bg-blue-500 px-[2rem] py-[1rem] rounded-lg font-bold text-xl">Try for free</button>
+                <button class="text-xl font-bold border-solid border-blue-500 border-[0.1rem] rounded-lg px-[2rem] py-[1rem]">See pricing</button>
+            </div>
+            <div><p class="text-xl">Fully featured 30-day free trial</p></div>
+        </div>
+    </main>
+
+    <section class="mt-[4rem] w-full h-full flex justify-center items-center">
+        <div class="text-center w-full h-full items-center flex flex-col justify-center">
+            <div class="p-[3rem] flex flex-col gap-[1rem] justify-center items-center w-[50%]">
+                <h2 class="text-4xl font-bold w-full">
+                    We love to explore new ways to engage with brands and reach 
+                </h2>
+                <p class="w-[90%] text-xl">Nor again is there anyone who loves or pursues or desires to obtain pain of itself because it is pain, but because</p>
+            </div>
+            <div class="w-full flex justify-center">
+                <img src="../imagenes/Home image.PNG" alt="">
+            </div>
+        </div>
+    </section>
+
+    <section class="mt-[5rem] flex px-[2rem] py-[1rem]">
+        <div class="w-full flex flex-col gap-[1rem]">
+            <button class="self-start border-solid border-blue-500 border-[0.1rem] rounded-full p-[0.5rem]">100+ Integrations</button>
+            <p class="font-bold w-full text-[3.5rem]"> We love to explore new ways to engage with brands and reach </p>
+            <p class="w-[90%] text-[2rem]">Nor again is there anyone who loves or pursues or desires to obtain pain of itself because it is pain, but because</p>
+            <button class="self-start text-red-600 font-bold">View all integrations =></button>
+        </div>
+        <img class="w-full h-full" src="../imagenes/Section 1 page home.PNG" alt="">
+    </section>
 </body>
+
 </html>
