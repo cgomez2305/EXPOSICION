@@ -1,0 +1,286 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: black;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+body {
+  padding-top: 29px;
+  min-width: 380px;
+}
+
+body,
+html {
+  height: 100%;
+  background-color: white !important;
+}
+
+.container {
+  max-width: 100%;
+  height: 2100px;
+}
+
+.intro {
+  height: 60vh;
+  width: 100%;
+  padding-left: 10%;
+  padding-top: 5%;
+}
+
+.intro h1 {
+  font-size: 5.5rem;
+  font-weight: 700;
+}
+
+.intro p {
+  width: 40%;
+  font-size: 1.5rem;
+}
+
+.search {
+  height: 10vh;
+  width: 85%;
+  display: flex;
+  align-items: center;
+  margin: auto;
+  background: hsla(0, 2%, 76%, 0.2);
+  padding: 0 1% 0 0;
+}
+
+.search input {
+  width: 100%;
+  font-size: 1.5rem;
+  background-color: transparent;
+  padding: 1%;
+  outline: none;
+}
+
+svg {
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.opciones {
+  display: flex;
+  justify-content: space-between;
+  max-width: 85%;
+  margin: 5vh auto;
+  height: 5vh;
+}
+
+.op {
+  cursor: pointer;
+  min-width: 16%;
+  text-align: center;
+}
+
+.op:hover {
+  border-bottom: red 2px solid;
+}
+
+.logos {
+  width: 80%;
+  height: 130vh;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  gap: 1rem;
+}
+
+.logos .img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  box-shadow: 0 0 2rem rgba(0, 0, 0, 0.2);
+  width: 100%;
+
+}
+
+.logos img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.aviso {
+  border: 0.3rem black solid;
+  width: 85%;
+  margin: 10rem auto;
+  height: 30vh;
+  border-radius: 20px;
+  padding: 2rem;
+  display: flex;
+  justify-content: space-around;
+}
+
+.aviso h2 {
+  font-weight: 700;
+  font-size: 3rem;
+}
+
+.aviso button {
+  border: 0.3rem black solid;
+  font-weight: bolder;
+  border-radius: 20px;
+  width: 10%;
+  height: 50%;
+  align-self: center;
+  font-weight: 500;
+  font-size: 1.5rem;
+}
+
+footer {
+  background: hsla(0, 2%, 76%, 0.2);
+  padding: 6%;
+  height: 50vh;
+}
+
+.footerCaja {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 0.01rem gray solid;
+  padding-bottom: 3rem;
+}
+
+footer h4 {
+  font-weight: bold;
+}
+
+footer a {
+  color: gray;
+}
+
+footer a:hover {
+  color: brown;
+}
+
+.linksFooter {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  color: black;
+}
+
+.marcaRegistrada {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  color: gray;
+  height: 40%;
+}
+
+.join {
+  height: 90vh;
+  width: 80%;
+  background-color: #ff6363;
+  color: white !important;
+  flex-direction: column;
+  justify-content: space-between;
+  display: none;
+  border-radius: 15px;
+  margin:5rem auto;
+  padding: 5%;
+}
+
+.join h2 {
+  color: white;
+  align-self: flex-start;
+  font-size: 4rem;
+  font-weight: 700;
+  text-align: left;
+  width: 100%;
+  margin-bottom: 2rem;
+}
+
+.join input {
+  padding: 5%;
+  color: black;
+  width: 100%;
+  border-radius: 10px;
+  align-self: center;
+}
+
+.join button {
+  align-self: flex-end;
+  cursor: pointer;
+  font-size: 3rem;
+  font-weight: 400;
+  text-align: right;
+  width: 100%;
+}
+
+.join p {
+  align-self: flex-start;
+  color: white;
+  font-size: 1.5rem;
+  font-weight: 400;
+  text-align: left;
+  width: 60%;
+}
+
+u {
+  color: white;
+}
+
+
+@media (max-width: 900px) {
+  .container {
+    max-width: 100%;
+    height: 440vh;
+  }
+
+  .logos {
+    grid-template-columns: repeat(3, 1fr);
+    margin-bottom: 150vh;
+  }
+
+  .intro p {
+    width: 100%;
+  }
+
+  .opciones {
+    overflow-x: auto;
+    gap: 1rem;
+  }
+
+  .aviso {
+    border: 0.3rem black solid;
+    width: 70%;
+    margin: 10rem auto;
+    height: 60vh;
+    border-radius: 20px;
+    padding: 2rem;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+  }
+
+  .aviso h2 {
+    font-weight: 800;
+    font-size: 2rem;
+  }
+
+  .aviso button {
+    width: 50%;
+    height: 20%;
+    align-self: flex-start;
+    justify-self: flex-end;
+  }
+
+  .aviso p {
+    font-size: medium;
+  }
+
+  .join {
+    display: flex;
+  }
+
+}
