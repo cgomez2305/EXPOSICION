@@ -2,7 +2,6 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  color: black;
 }
 
 ::-webkit-scrollbar {
@@ -17,7 +16,6 @@ body {
 body,
 html {
   height: 100%;
-  background-color: white !important;
 }
 
 .container {
